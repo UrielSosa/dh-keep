@@ -2,12 +2,12 @@
 
 _Una aplicación con el objetivo de crear, editar y eliminar notas_
 ### Los items a plantear son:
-- [x]Armar el diseño
-- [ ]Crear el maquetado
-- [ ]Subir sitio a heroku u otro
-- [ ]Agregar funcionalidad a las vistas
-- [ ]Hacer un CRUD
-- [ ]Crear la db de la app
+- [x] Armar el diseño
+- [ ] Crear el maquetado
+- [ ] Subir sitio a heroku u otro
+- [ ] Agregar funcionalidad a las vistas
+- [ ] Hacer un CRUD
+- [ ] Crear la db de la app
 
 |Para hacer|En progreso|Hecho|
 |---|---|---|
