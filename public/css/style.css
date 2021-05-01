@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#root {
+    max-width: 1300px;
+}
+
+/*header*/
+.header {
+    width: 100%;
+    box-shadow: 0 5px 5px #5F6368;
+    display: flex;
+}
+
+/*header - logo*/
+.header .logo {
+    width: 10%;
+    display: flex;
+    margin-left: 0;
+    align-items: center;
+}
+.header .logo img {
+    width: 40px;
+    height: 40px;
+}
+.header .logo h3 {
+    color: #5F6368;
+    font-size: 1.5em;
+}
+
+/*header - buscador*/
+.header .buscador {}
+.header .buscador label {}
+.header .buscador input {}
+
+/*header - user*/
+.header i {}
