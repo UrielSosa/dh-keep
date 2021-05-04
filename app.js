@@ -4,7 +4,7 @@ const app = express();
 
 
 /*Configuraciones*/
-app.use(express.static(path.resolve(__dirname,  'public')))
+app.use(express.static(path.resolve(__dirname, 'public')))
 
 /*Rutas*/
 app.get('/', (req, res) => {
@@ -13,4 +13,4 @@ app.get('/', (req, res) => {
 
 
 /*Server*/
-app.listen(process.env.PORT || 3000, () => console.log('http://localhost:3000'));
+app.listen(process.env.PORT 00, () => console.log('http://localhost:3000'));
