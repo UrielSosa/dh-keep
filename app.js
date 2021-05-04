@@ -7,7 +7,10 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 /*Rutas*/
-app.get('/', (req, res) => {
+app.get('/', (req, res) => {akjsdklajsdñkajsdñ<ajl>ncajslñ</ajl>kansdkansd
+
+
+    asjdñkajsd}ñalsjdñ
     res.sendFile(path.join(__dirname, 'views/index.html'));
 })
 
