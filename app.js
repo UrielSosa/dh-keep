@@ -4,7 +4,7 @@ const app = express();
 
 
 /*Configuraciones*/
-app.use(express.static(path.resolve(__dirname,  'public')))
+app.use(express.static(path.resolve(__dirname, 'public')))
 
 /*Rutas*/
 app.get('/', (req, res) => {
