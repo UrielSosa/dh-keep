@@ -8,7 +8,8 @@
         <div class="container">
             <%- include ('partials/aside') %> 
             <main class="main-container">
-                <form action="/" class="form" method="POST">
+
+                <form action="/notes" class="form" method="POST">
                     <div class="form-group">
                         <input type="text" name="titulo" placeholder="Titulo">
                     </div>
@@ -21,9 +22,20 @@
                         <input type="file" id="img" name="image">
                     </div>
                     <div class="form-group">
-                        <button>Guardar</button>
+                        <button>Crear</button>
                     </div>
                 </form>
+                <form action="/notes/1?_method=DELETE" class="form" method="POST">
+                    <div class="form-group">
+                        <button>Eliminar</button>
+                    </div>
+                </form>
+
+                <section class="">
+                    <ul>
+                        <!-- <li><a href="/notes/<%# note.id %> "><%# note.title %> </a></li> -->
+                    </ul>
+                </section>
                 <!-- <section>
                     <article>
                         <h5>Preparar contenido</h5>
