@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('partials/head') %> 
+<body>
+    <div id="root">
+        <%- include ('partials/header') %> 
+
+        <div class="container">
+            <%- include ('partials/aside') %> 
+            <main class="main-container">
+                <form action="/" class="form" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="titulo" placeholder="Titulo">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="descripcion" placeholder="Crea una nota...">
+                    </div>
+                    <div class="form-group">
+                        <input type="color" name="color">
+                        <label for="img">Cargar</label>
+                        <input type="file" id="img" name="image">
+                    </div>
+                    <div class="form-group">
+                        <button>Guardar</button>
+                    </div>
+                </form>
+                <!-- <section>
+                    <article>
+                        <h5>Preparar contenido</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ullam.</p>
+                        <img src="" alt="">
+                        <div>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </article>
+                </section> -->
+            </main>
+        </div>
+    </div>
+</body>
+</html>

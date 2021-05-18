@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "titulo": "CRUD episodio 1",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa, minima accusamus eaque amet eos tenetur possimus totam dicta sit."
+    },
+    {
+        "id": 2,
+        "name": "CRUD episodio 1",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa, minima accusamus eaque amet eos tenetur possimus totam dicta sit."
+    },
+    {
+        "id": 2,
+        "name": "Comprar comida para kobu",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa, minima accusamus eaque amet eos tenetur possimus totam dicta sit."
+    }
+   ]
