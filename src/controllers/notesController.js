@@ -1,7 +1,14 @@
+const fs = require('fs');
+const path = require('path');
+
+
+let notes = fs.readFileSync(path.resolve(__dirname, '../database/notes.json'), 'utf-8');
+    notes = JSON.parse(notes);
+
 
 module.exports = {
     index: function (req, res) {
-        res.render('index');
+        res.render('all', { notes });
     },
     show: function (req, res) {
         res.send('detalle de una nota');
