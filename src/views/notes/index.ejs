@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('../partials/head') %> 
+<body>
+    <div id="root">
+        <%- include ('../partials/header') %> 
+
+        <div class="container">
+            <%- include ('../partials/aside') %> 
+            <main class="main-container">
+                
+                <% notes.forEach(note => { %>
+                    <%- include ('partials/note', {note}) %> 
+                <% }) %>
+
+            </main>
+        </div>
+    </div>
+</body>
+</html>

@@ -8,19 +8,19 @@ let notes = fs.readFileSync(path.resolve(__dirname, '../database/notes.json'), '
 
 module.exports = {
     index: function (req, res) {
-        res.render('all', { notes });
+        res.render('notes/index', { notes });
     },
     show: function (req, res) {
-        res.send('detalle de una nota');
+        res.render('notes/detail');
     },
     edit: function (req, res) {
-        res.send('Vista para editar una nota');
+        res.render('notes/edit');
     },
     update: function (req, res) {
         res.send('Logica de actualizacion');
     },
     create: function (req, res) {
-        res.send('Vista para crear una nota');
+        res.render('notes/create');
     },
     store: function (req, res) {
         res.send(req.body);

@@ -1,0 +1,17 @@
+<article class="note">
+    <div class="note-header">
+        <h3><%=note.titulo %></h3>
+        <% if (note.color) { %>
+            <i class="fas fa-circle" style='color: <%= note.color %>'></i>
+        <% } %>    
+    </div>
+    <p><%=note.descripcion %></p>
+    <% if (note.image) { %>
+        <div class="image-note">
+            <img src="<%=note.imagen %>" alt="note">
+        </div>
+        <% } %>
+    <div class="btn-actions">
+        <i class="fas fa-edit"></i><i class="fas fa-trash"></i>
+    </div>
+</article>
