@@ -118,7 +118,7 @@ input[type='text'] {
     width: 80%;
     padding-top:10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .main-container h1 {
     margin-left:20%;

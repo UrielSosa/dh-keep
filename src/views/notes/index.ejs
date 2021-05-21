@@ -9,8 +9,10 @@
             <%- include ('../partials/aside') %> 
             <main class="main-container">
                 
-                <% notes.forEach(note => { %>
-                    <%- include ('partials/note', {note}) %> 
+                <% notes.forEach(function (note) { %>
+
+                    <%- include ('partials/note', { note }) %> 
+                    
                 <% }) %>
 
             </main>
