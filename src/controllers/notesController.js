@@ -49,6 +49,13 @@ module.exports = {
         return res.redirect('/notes');
     },
     destroy: function (req, res) {
-        res.send('Logica de eliminar');
+        
+        let notesNew = notes.filter(note => note.id != req.params.id)
+        
+        notesNew = JSON.stringify(notesNew, null, 4);
+        
+        fs.writeFileSync(path.resolve(__dirname, '../database/notes.json'), notesNew);
+        
+        res.redirect('/notes');
     }
 }

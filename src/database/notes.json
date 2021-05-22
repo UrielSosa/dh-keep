@@ -1,39 +1,30 @@
 [
     {
-        "id": 1,
-        "titulo": "CRUD episodio 1",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa, minima accusamus eaque amet eos tenetur possimus totam dicta sit."
-    },
-    {
-        "id": 2,
-        "titulo": "CRUD episodio 1",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa, minima accusamus eaque amet eos tenetur possimus totam dicta sit.",
-        "color": "aqua"
-    },
-    {
-        "id": 3,
-        "titulo": "Comprar comida para kobu",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa, minima accusamus eaque amet eos tenetur possimus totam dicta sit."
-    },
-    {
-        "id": 4,
-        "titulo": "Repaso de multer",
-        "descripcion": "añldl{asdl{ñ",
-        "color": "#ff0000",
-        "image": "image-1621639467947.png"
-    },
-    {
-        "id": 5,
-        "titulo": "Repaso de multer",
-        "descripcion": "añldl{asdl{ñ",
-        "color": "#ff0000",
-        "image": "image-1621639502372.png"
-    },
-    {
         "id": 6,
         "titulo": "Repaso de multer",
         "descripcion": "añldl{asdl{ñ",
         "color": "#ff0000",
         "image": "image-1621639583232.png"
+    },
+    {
+        "id": 7,
+        "titulo": "Ya nos vamos de la ultima clase",
+        "descripcion": "jhasdlkahsñdkhalkdha",
+        "color": "#ff0000",
+        "image": "image-1621641757385.png"
+    },
+    {
+        "id": 8,
+        "titulo": "Repaso de multer",
+        "descripcion": "ajsdlñasdlasjdlñjasñldjasñ",
+        "color": "#1eff00",
+        "image": "image-1621641789355.jpg"
+    },
+    {
+        "id": 9,
+        "titulo": "añkdjañksdjañ",
+        "descripcion": "ahsdha{sdkahsñkd",
+        "color": "#0088ff",
+        "image": "image-1621641886176.jpg"
     }
 ]
