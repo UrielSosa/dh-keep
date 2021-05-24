@@ -1,25 +1,16 @@
 const fs = require('fs');
 const path = require('path');
-
-let notes = fs.readFileSync(path.resolve(__dirname, '../database/notes.json'), 'utf-8');
-    notes = JSON.parse(notes);
-
-const lastId = () => {
-    let ultimo = 0;
-    notes.forEach(note => {
-        if (ultimo < note.id) {
-            ultimo = note.id;
-        }
-    });
-    return ultimo;
-}
+const {readJson, lastId, writeJson} = require('./helpers');
 
 module.exports = {
     index: function (req, res) {
+        let notes = readJson('notes.json');
         res.render('notes/index', { notes });
     },
     show: function (req, res) {
-        res.render('notes/detail');
+        let notes = readJson('notes.json');
+        let note = notes.find(note => note.id == req.params.id);
+        res.render('notes/detail', { note });
     },
     edit: function (req, res) {
         res.render('notes/edit');
@@ -33,28 +24,25 @@ module.exports = {
     store: function (req, res) {
         //console.log(req.file); //acá llega la info de upload.single()
         //console.log(req.files); //acá llega la info de upload.any()
-        
+        let notes = readJson('notes.json');
         let note = {
-            id: lastId() + 1,
+            id: lastId('notes.json') + 1,
             ...req.body,
             image: req.file.filename
         }
 
         notes.push(note);
 
-        let notesJson = JSON.stringify(notes, null, 4);
-        
-        fs.writeFileSync(path.resolve(__dirname, '../database/notes.json'), notesJson);
+        writeJson('notes.json', notes);
 
         return res.redirect('/notes');
     },
     destroy: function (req, res) {
-        
+        let notes = readJson('notes.json');
+
         let notesNew = notes.filter(note => note.id != req.params.id)
         
-        notesNew = JSON.stringify(notesNew, null, 4);
-        
-        fs.writeFileSync(path.resolve(__dirname, '../database/notes.json'), notesNew);
+        writeJson('notes.json', notesNew);
         
         res.redirect('/notes');
     }
