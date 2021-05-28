@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('../partials/head') %> 
+<body>
+    <div id="root">
+        <%- include ('../partials/header') %> 
+
+        <div class="container">
+            <%- include ('../partials/aside') %> 
+            <main class="main-container">
+
+                <form action="/users/login" class="form" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Ingrese nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Ingrese email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group">
+                        <span>¿Ya tenes cuenta? Hace click <a href="/users/login">acá</a></span>
+                        <div class="btn-submit">
+                            <button type="submit">Guardar</button>
+                        </div>
+                    </div>
+                </form>
+                
+            </main>
+        </div>
+    </div>
+</body>
+</html>

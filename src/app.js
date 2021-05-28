@@ -18,9 +18,11 @@ app.use(express.json());
 /* ROUTES */
 const mainRouter = require('./routes/main');
 const notesRouter = require('./routes/notes');
+const usersRouter = require('./routes/users');
 
 app.use('/', mainRouter);
 app.use('/notes', notesRouter);
+app.use('/users', usersRouter);
 
 /* SERVER */
 app.listen(3000, () => console.log('http://localhost:3000'))
